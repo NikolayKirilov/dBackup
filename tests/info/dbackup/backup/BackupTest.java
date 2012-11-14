@@ -14,7 +14,7 @@ public class BackupTest {
 
 	@Before
 	public void setUp() {
-		this.backup = new BackupImpl();
+		//this.backup = new BackupImpl();
 	}
 
 	@Test

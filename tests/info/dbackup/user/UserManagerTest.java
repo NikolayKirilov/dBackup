@@ -1,5 +1,6 @@
 package info.dbackup.user;
 
+
 import org.junit.Test;
 
 import junit.framework.Assert;
@@ -9,7 +10,7 @@ public class UserManagerTest {
 	private UserManager userManager;
 
 	@Test
-	public registerUser() {
+	public void registerUser() {
 
 		final String name = "muncho";
 		final String password = "123456";
@@ -18,7 +19,7 @@ public class UserManagerTest {
 	}
 
 	@Test
-	public registerDuplicatingUser() {
+	public void registerDuplicatingUser() {
 
 		final String name = "muncho";
 		final String password = "123456";
@@ -30,7 +31,7 @@ public class UserManagerTest {
 	}
 
 	@Test
-	public registerUserWithTooShortPassword() {
+	public void registerUserWithTooShortPassword() {
 
 		final String name = "muncho";
 		final String password = "123";
@@ -40,7 +41,7 @@ public class UserManagerTest {
 	}
 
 	@Test
-	public authenticate() {
+	public void authenticate() {
 		final String name = "asdfghj";
 		final String password = "123456";
 
@@ -48,6 +49,6 @@ public class UserManagerTest {
 
 		final User user = userManager.authenticate(name, password);
 
-		Assert.assertEquals(name, user.getName());
+		Assert.assertEquals(name, user.name);
 	}
 }
