@@ -20,6 +20,8 @@ public class BackupTest {
 	@Test
 	public void empty() {
 
+		//TODO not to use file - use backupData or something like that instead
+		//I think we'll need to extend the standard file with some additional features.
 		final List<File> list = this.backup.getBackupFolders();
 
 		Assert.assertEquals(0, list.size());
