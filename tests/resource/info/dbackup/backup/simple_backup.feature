@@ -7,6 +7,6 @@ Feature: Backup some files
     Given a backup scheduler with user with name Kiril
     When I add file /home/user/folder/backupfile for scheduled backup
     And I add file /home/user/folder/backupfile2 for scheduled backup
-    And I will backup
+    And user will backup
     Then all files will be backuped
 

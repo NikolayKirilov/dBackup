@@ -30,8 +30,8 @@ public class BackupStory {
 		backup.addFolderToBackup(new File(filename));
 	}
 
-	@Then("^the user will backup$")
-	public void backup() {
+	@When("^user will backup$")
+	public void I_will_backup() {
 		backup.backupFiles();
 	}
 
