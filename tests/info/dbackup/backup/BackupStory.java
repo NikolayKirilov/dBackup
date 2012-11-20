@@ -19,6 +19,12 @@ public class BackupStory {
 	@Rule
 	public final JUnitRuleMockery context = new JUnitRuleMockery();
 
+	@Given("^a backup scheduler using (.*) storage with user with name Kiril$")
+	public void usingStorage(String storageType) {
+		// User user = new User(username);
+		// backup = new Backup(user);
+	}
+
 	@Given("^a backup scheduler with user with name (.*)$")
 	public void given(String username) {
 		// User user = new User(username);
