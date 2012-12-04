@@ -13,6 +13,8 @@ public interface Backup {
 
 	boolean allFilesAreBackuped();
 
+	boolean logIn(String name, String password);
+
 	// TODO add methods (or different class to be used with composition) for
 	// file types ignore lists (like .gitignore)
 
